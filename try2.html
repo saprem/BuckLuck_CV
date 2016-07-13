@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+
+</head>
+<body>
+<input type="button" id="more_fields" onclick="add_fields();" value="Add More" />
+
+<div id="room_fileds">
+<div class='label'>Room 1:</div>
+<div id="content">
+
+"<div class="item"><div class="meta"><div class="upper-row"><h3 class="job-title">Lead Developer</h3><br><div class="time">2015 - Present</div></div><!--//upper-row--><div class="company">Startup Hubs, San Francisco</div></div><!--//meta--><div class="details"><p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p> <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p></div><!--//details--></div><!--//item-->"
+
+</div>
+</div>
+
+<script type="text/javascript">
+function add_fields() {
+var d = document.getElementById("content");
+
+d.innerHTML += "<br /><span>Width: <input type='text'style='width:48px;'value='' /><small>(ft)</small></span> X <span>Length: <input type='text' style='width:48px' value='' /><small>(ft)</small</span>";
+}
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
